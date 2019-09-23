@@ -8,7 +8,7 @@ A dead simple tool in Python to convert JSON files into YAML.
 $ python3 json2yaml.py [-r] [-s] [-d] PATH
 ```
 
-where `PATH` is a path string to a JSON file or directory containing JSON files.
+where `PATH` is a path string to a JSON file or directory (containing JSON files).
 
 ### Optional arguments:
 
@@ -16,7 +16,7 @@ where `PATH` is a path string to a JSON file or directory containing JSON files.
     -s, --sort       Sort the key-value pairs during conversion.
     -d, --delete     Delete file(s) after conversion.
 
-The program uses PyYAML with LibYAML bindings. In order to use it, you have to install LibYAML and its bindings for PyYAML.
+The program uses PyYAML with LibYAML bindings. In order to use the script, you have to install PyYAML and its LibYAML bindings.
 
 On Linux:
 

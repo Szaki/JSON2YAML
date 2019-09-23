@@ -15,7 +15,6 @@ where `PATH` is a path string to a JSON file or directory containing JSON files.
     -r, --recursive  Look for files in subdirectories.
     -s, --sort       Sort the key-value pairs during conversion.
     -d, --delete     Delete file(s) after conversion.
-    PATH             Path to a JSON file or directory containing JSON files.
 
 The program uses PyYAML with LibYAML bindings. In order to use it, you have to install LibYAML and its bindings for PyYAML.
 

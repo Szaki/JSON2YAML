@@ -6,7 +6,7 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("path", type=str, help="Path to a JSON file or directory containing JSON files.")
+parser.add_argument("PATH", type=str, help="Path to a JSON file or directory containing JSON files.")
 parser.add_argument("-r", "--recursive", action='store_true', help="Look for files in subdirectories.")
 parser.add_argument("-s", "--sort", action='store_true', help="Sort the key-value pairs during conversion.")
 parser.add_argument("-d", "--delete", action='store_true', help="Delete file(s) after conversion.")

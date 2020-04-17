@@ -15,7 +15,7 @@ args = parser.parse_args()
 def convert(path):
     with open(path, "r") as fj:
         with open(path.replace(".json", ".yml"), "w") as fy:
-            yaml.dump(json.load(fj), fy, Dumper=yaml.CDumper, sort_keys=args.sort)
+            yaml.safe_dump(json.load(fj), fy, sort_keys=args.sort)
     if args.delete:
         os.remove(path)
     print(f"Successfully converted {path}...")
